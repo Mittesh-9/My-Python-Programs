@@ -1,4 +1,4 @@
-# My-Repo
-- This Repository has python projects i have followed along and coded.
-- Also some solutions to kaggle problems.
-- And some code through which i have learned many coding concepts.
+# My Repository
+- This repository contains Python projects I have worked on and coded along with.
+- It also includes solutions to Kaggle problems.
+- Additionally, there is code through which I have learned many coding concepts.
