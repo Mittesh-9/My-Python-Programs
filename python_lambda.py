@@ -16,3 +16,9 @@ print(x(10))
 
 x = lambda a, b : a * b
 print(x(5, 5))
+
+# Example
+# Summarize argument a, b, and c and return the result:
+
+x = lambda a, b, c : a + b + c
+print(x(1,2,5))
