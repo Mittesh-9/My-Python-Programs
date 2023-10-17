@@ -48,3 +48,15 @@ def elementwise_greater_than(L, thresh):
             bool_list.append(False)
     return(bool_list)
 
+# Better solutions by kaggle
+
+def elementwise_greater_than(L, thresh):
+    res = []
+    for ele in L:
+        res.append(ele > thresh)
+    return res
+    
+# And here's the list comprehension version:
+
+def elementwise_greater_than(L, thresh):
+    return [ele > thresh for ele in L]
