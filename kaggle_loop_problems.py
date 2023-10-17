@@ -66,3 +66,26 @@ def elementwise_greater_than(L, thresh):
     same meal has ever been served two days in a row, and False otherwise.'''
 
 Solution -->
+
+def menu_is_boring(meals):
+    """Given a list of meals served over some period of time, return True if the
+    same meal has ever been served two days in a row, and False otherwise.
+    """
+    prev_meal = None
+    for meal in meals:
+        if meal == prev_meal:
+            return True
+        prev_meal = meal
+    return False
+
+# Better solutions by kaggle
+
+def menu_is_boring(meals):
+    # Iterate over all indices of the list, except the last one
+    for i in range(len(meals)-1):
+        if meals[i] == meals[i+1]:
+            return True
+    return False
+# The key to our solution is the call to range. range(len(meals)) would give us all the indices of meals. If we had used that range, the last iteration of the loop would be comparing the last element to the element after it, which is... IndexError! range(len(meals)-1) gives us all the indices except the index of the last element.
+
+# But don't we need to check if meals is empty? Turns out that range(0) == range(-1) - they're both empty. So if meals has length 0 or 1, we just won't do any iterations of our for loop.
