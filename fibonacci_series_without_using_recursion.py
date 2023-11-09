@@ -1,3 +1,10 @@
+# Problem Solution
+# 1. Take the first two numbers of the series and the number of terms to be printed from the user.
+# 2. Print the first two numbers.
+# 3. Use a while loop to find the sum of the first two numbers and then proceed the fibonacci series.
+# 4. Print the fibonacci series till n-2 is greater than 0.
+# 5. Exit.
+
 a = int(input("Enter the first number of the series "))
 b = int(input("Enter the second number of the series "))
 
