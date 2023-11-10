@@ -16,3 +16,10 @@ while(n > 0):
     n = n - 1
 print("Factorial of the number is : ")
 print(fact)
+
+# Program Explanation
+# 1. User must enter a number.
+# 2. A factorial variable is initialized to 1.
+# 3. A while loop is used to multiply the number to the factorial variable and then the number is decremented each time.
+# 4. This continues till the value of the number is greater than 0.
+# 5. The factorial of the number is printed.
