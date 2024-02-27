@@ -14,6 +14,13 @@ for x in str(num):
 
 print(sum(num_lst2))
 
+# Reversing the num >>
+
+num_lst = [str(x) for x in str(num)]
+
+reverse_num = ''.join(num_lst[::-1])
+print(reverse_num)
+
 # Mathematical way to do it >> to be completed
 
 new_num = num % 10
