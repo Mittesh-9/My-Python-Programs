@@ -21,8 +21,10 @@ num_lst = [str(x) for x in str(num)]
 reverse_num = ''.join(num_lst[::-1])
 print(reverse_num)
 
-# Mathematical way to do it >> to be completed
+# Mathematical way to do it >>
 
-new_num = num % 10
+first_digit = (num // 100) % 10
+second_digit = (num // 10) % 10
+third_digit = (num // 1) % 10
 
-print(new_num)
+print(first_digit + second_digit + third_digit)
